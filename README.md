@@ -1,85 +1,104 @@
 # Core-Java-Practice-Examples
 
-Core Java Practice Examples
+<h1 align="center">☕ Core Java Practice Examples</h1>
 
-Welcome to the Core Java Practice Examples repository!
-This repo contains a collection of Java programs covering fundamental and advanced topics — perfect for students, interview preparation, or anyone looking to strengthen their Java skills.
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-Programming-orange?logo=java&logoColor=white" alt="Java Badge"/>
+  <img src="https://img.shields.io/badge/IDE-VSCode%20%7C%20Eclipse%20%7C%20IntelliJ-blue?logo=visualstudiocode" alt="IDE Badge"/>
+  <img src="https://img.shields.io/github/stars/AjayUllengalla/Core-Java-Practice-Examples?style=social" alt="GitHub stars"/>
+</p>
 
-📘 About This Repository
+---
 
-This project includes example programs from all the essential Core Java concepts, including:
+## 🧠 About This Repository
+This repository contains a collection of **Core Java practice programs** to help you build strong fundamentals in Java.  
+Each topic includes simple, well-commented examples for beginners to understand how things work.
 
-Data Types, Variables, and Operators
+---
 
-Control Statements (if, switch, loops)
+## 📚 Topics Covered
+- 🔹 Data Types, Variables & Operators  
+- 🔹 Conditional Statements (`if`, `switch`)  
+- 🔹 Loops (`for`, `while`, `do-while`)  
+- 🔹 Arrays & Strings  
+- 🔹 Methods & Recursion  
+- 🔹 Object-Oriented Programming (OOPs)
+  - Classes & Objects  
+  - Inheritance  
+  - Polymorphism  
+  - Abstraction & Encapsulation  
+- 🔹 Exception Handling  
+- 🔹 Collections Framework  
+- 🔹 File Handling  
+- 🔹 Java 8 Features — Streams, Lambda Expressions  
 
-Arrays and Strings
+---
 
-Methods and Recursion
+## ⚙️ How to Run Locally
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/AjayUllengalla/Core-Java-Practice-Examples.git
+Open the folder in your preferred IDE (VS Code / Eclipse / IntelliJ)
 
-Object-Oriented Programming (Classes, Objects, Inheritance, Polymorphism, Encapsulation, Abstraction)
-
-Exception Handling
-
-Collections Framework
-
-File Handling
-
-Java 8 Features (Lambdas, Streams)
-
-and many more…
-
-⚙️ How to Run
-
-Clone the repository:
-
-git clone https://github.com/AjayUllengalla/Core-Java-Practice-Examples.git
-
-
-Open the project in VS Code or Eclipse/IntelliJ
-
-Compile and run any program:
+Compile & Run
 
 javac FileName.java
 java FileName
 
+🧩 Folder Structure
+📦 Core-Java-Practice-Examples
+ ┣ 📂 01_Basics
+ ┣ 📂 02_ControlStatements
+ ┣ 📂 03_Arrays
+ ┣ 📂 04_Methods
+ ┣ 📂 05_OOPs
+ ┣ 📂 06_Collections
+ ┣ 📂 07_ExceptionHandling
+ ┗ 📜 README.md
+
 💡 Purpose
 
-Practice and understand Java fundamentals
+🚀 To strengthen Java fundamentals, improve problem-solving skills, and prepare for coding interviews.
 
-Strengthen problem-solving skills
+🏆 Upcoming Additions
 
-Prepare for interviews and assessments
+🔸 Multithreading Examples
 
-🧩 Structure
+🔸 File I/O and Serialization
 
-Each folder or file represents a Java topic or concept.
-For example:
+🔸 JDBC Connectivity
 
-/01_Basics
-/02_Loops
-/03_Arrays
-/04_Methods
-/05_OOPs
-...
-
-🏆 Future Additions
-
-Advanced Java Concepts (Multithreading, JDBC, etc.)
-
-Real-world coding examples
-
-Mini projects
+🔸 Mini-Projects using Core Java
 
 👨‍💻 Author
 
 Ajay Ullengalla
-💼 Passionate Java Learner | 💻 Building a strong foundation in backend development
+💼 Passionate Java Learner | ☕ Backend Developer in the Making
 
+<p align="left"> <a href="https://github.com/AjayUllengalla"> <img src="https://img.shields.io/badge/GitHub-AjayUllengalla-black?logo=github" /> </a> </p>
 🌟 Support
 
-If you find this repository helpful:
+If you find this repository helpful, please consider:
 
-⭐ Star the repo on GitHub
+⭐ Starring the repo
 
-🐞 Report issues or suggest improvements
+🍴 Forking it to explore your own changes
+
+🐞 Raising issues for suggestions or improvements
+
+<h3 align="center">Made with ❤️ by Ajay Ullengalla</h3> ```
+✅ How to Use
+
+In VS Code, open your repo folder.
+
+Create or open the README.md file.
+
+Paste the above content.
+
+Save (Ctrl + S).
+
+Then push to GitHub:
+
+git add README.md
+git commit -m "Added styled README"
+git push
