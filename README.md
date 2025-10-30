@@ -87,18 +87,5 @@ If you find this repository helpful, please consider:
 🐞 Raising issues for suggestions or improvements
 
 <h3 align="center">Made with ❤️ by Ajay Ullengalla</h3> ```
-✅ How to Use
 
-In VS Code, open your repo folder.
 
-Create or open the README.md file.
-
-Paste the above content.
-
-Save (Ctrl + S).
-
-Then push to GitHub:
-
-git add README.md
-git commit -m "Added styled README"
-git push
