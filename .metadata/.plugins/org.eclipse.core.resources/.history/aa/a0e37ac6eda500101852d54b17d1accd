@@ -1,0 +1,20 @@
+package practice.programs;
+
+public class LeapYearMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int year = 2024;
+		
+		if(year / 4 == 0) {
+			if(year / 100 == 0 && year / 400) {
+				System.out.println("The Given year is leap year");
+			} 
+			System.out.println("The Given year is leap year");
+		} else {
+			System.out.println("The Given Year is not a Leap Year");
+		}
+	}
+
+}

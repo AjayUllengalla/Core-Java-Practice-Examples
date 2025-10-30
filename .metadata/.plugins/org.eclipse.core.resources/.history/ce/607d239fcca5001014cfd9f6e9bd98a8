@@ -1,0 +1,18 @@
+package operators.arthimeticOperators;
+
+public class ArthimeticOperatorMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int num1 =10 , num2 = 25;
+		System.out.println("The Addition Of "+ num1 +" + " + num2 + " = " +(num1 + num2));
+		System.out.println("The Subtract Of "+ num1 +" - " + num2 + " = " +(num1 - num2));
+		System.out.println("The Multiplication Of "+ num1 +" * " + num2 + " = " +(num1 * num2));
+		System.out.println("The Division Of "+ num1 +" / " + num2 + " = " +(num1 / num2));
+		System.out.println("The Modular Division Of "+ num1 +" % " + num2 + " = " +(num1 % num2));
+		System.out.println(" ");
+
+	}
+
+}

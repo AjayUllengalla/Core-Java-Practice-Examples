@@ -1,0 +1,23 @@
+package Conditional.decisionmaking;
+
+public class VowelsOrConsonants {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		char charValue= 'j';
+		
+		if(charValue == 'a' || charValue == 'e' || charValue == 'i' || charValue == 'o' || charValue == 'u' ) {
+			System.out.println("The Given Character is Vowel");
+		} else {
+			System.out.println("The Given Character is Consonant");
+		}
+		charValue= 'u';
+		if(charValue == 'a' || charValue == 'e' || charValue == 'i' || charValue == 'o' || charValue == 'u' ) {
+			System.out.println("The Given Character is Vowel");
+		} else {
+			System.out.println("The Given Character is Consonant");
+		}
+	}
+
+}

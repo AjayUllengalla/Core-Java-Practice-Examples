@@ -1,0 +1,17 @@
+package operators.logicalOperators;
+
+public class LogicalOperatorsMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int var1 = 25;
+		int var2 = 36;
+		int var3 = 16;
+		
+		boolean result = var1 > var2 && var2 > var3 && var1 > var3;
+		System.out.prrintln("The Result is :"+ result);
+
+	}
+
+}

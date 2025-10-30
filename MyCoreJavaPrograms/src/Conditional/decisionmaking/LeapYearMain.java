@@ -1,0 +1,25 @@
+package Conditional.decisionmaking;
+
+public class LeapYearMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int year = 2024;
+		
+		if(year % 4 == 0) {
+			if(year % 100 == 0) {
+				if(year % 400 == 0) {
+					System.out.println("The Given Year is a Leap Year");
+				} else {
+					System.out.println("The Given  Year is not a Leap Year");
+				}
+			} else {
+				System.out.println("The Given Year is a Leap Year");
+			}
+		} else {
+			System.out.println("The Given Year is not a leap year");
+		}
+	}
+
+}

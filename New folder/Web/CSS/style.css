@@ -1,0 +1,295 @@
+.banner {
+    background-color: black;
+    color: white;
+    margin: 10px 0 10px 0;
+}
+.banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content2  h2{
+    margin: 0 0 10px 0;
+
+}
+.banner-content2 p {
+    margin: 0 0 20px 0;
+}
+.banner-content a {
+    color: black;
+    background-color: yellow;
+    text-decoration: none;
+    border-color: black;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px 0 0 0;  
+}
+.header-content {
+    display: flex;
+    justify-content: space-around;
+}
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+.nav-links li {
+    list-style: none;
+    
+}
+.about-section {
+    margin: 10px 0 10px 0;
+}
+.about-us {
+    background-color: aliceblue;
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.about-us h2 {
+    background-color: yellow;
+    border: 1px solid black;
+   
+    padding: 5px;
+}
+.service {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding: 10px;
+}
+.row1 {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.part1 {
+    display: flex;
+    gap: 20px;
+   
+}
+.part2 {
+    display: flex;
+}
+.row2 {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    
+}
+
+.service img {
+    width: 300px;
+    height: 300px;
+}
+.repair-section {
+    margin: 10px 0 10px 0;
+}
+.service-section {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+.service-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.service-sub img {
+    justify-content: center;
+    align-items: center;
+}
+.service1 {
+    background-color: black;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    height: 150px;
+    margin-bottom: 10px;
+    margin: 5px;
+}
+
+.service2 {
+    display: flex;
+}
+.Our-service {
+    
+    margin: 10px 0 10px 0;
+}
+.house-repair {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.house-repair img {
+    width: 500px;
+    height: 350px;
+}
+.house-repair h3 {
+    border: 1px solid black;
+    background-color: whitesmoke;
+    padding: 5px;
+    width: 150px;
+    color: black;
+} 
+.projects-section {
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+.project-content {
+    justify-content: center;
+    padding: 20px;
+}
+.project-content h2 {
+    text-align: center;
+}
+.project-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.project-links li{
+    list-style: none;
+}
+.Project-image {
+    text-align: center;
+}
+.book-now {
+    background: yellow;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 0 0 0;
+}
+
+.book-now  a{
+    text-decoration: none;
+}
+
+.address-sec {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+}
+.address-content {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    gap: 10rem;
+    margin: 30px 0 30px 0;
+    padding: 30px;
+    
+}
+.form-row1 {
+    display: flex;
+    gap: 30px;
+    /* justify-content: center; */
+}
+.form-part1 {
+    display: flex;
+    padding: 5px;
+
+}
+.form-part2 {
+    display: flex;
+    padding: 5px;
+    
+}
+.form-part1 input {
+    padding: 5px;
+}
+.form-part2 input {
+    padding: 5px;
+}
+.form-row2 {
+    display: flex;
+    gap: 30px;
+    /* justify-content: center; */
+}
+.form-row3 {
+    display: flex;
+    
+}
+.form-part3 {
+    display: flex;
+    padding: 10px;
+   
+}
+
+.message-content {
+    padding: 5px;
+}
+
+.form-btn {
+    padding: 5px;
+}
+.form-btn input {
+    padding: 5px;
+    background: black;
+    color: white;
+    width: 80px;
+}
+
+.client-section {
+    margin: 20px 0 20px 0;
+    padding: 10px;
+}
+
+.client-content {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    padding: 10px;
+    
+}
+.footer-section {
+    padding: 10px;
+    margin: 20px 0 0 0;
+}
+/* .footer-section {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+} */
+.footer-content {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 10px;
+}
+.footer-content li {
+    list-style: none;
+    margin-bottom: 5px;
+    
+}
+.footer-content h1 {
+    color: yellow;
+}
+.footer-sub {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.footer-seccontent {
+    margin: 31px 0 0 0;
+    
+}
+
+
+
