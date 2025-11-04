@@ -22,7 +22,8 @@ public class IvrMenuMain {
 				
 			}
 			case 3: {
-				
+				leapYear();
+				break;
 			}
 			case 4: {
 				
@@ -68,7 +69,7 @@ public class IvrMenuMain {
 		
 		System.out.println( "for More Check enter : "+ subChoice);
 		System.out.println("7 for Exit");
-		System.out.println(" for MainMenu");
+		System.out.println("8 for MainMenu");
 		subChoice  = sc.nextInt();
 	}
 	static void add() {
@@ -96,6 +97,21 @@ public class IvrMenuMain {
 		}
 	static void leapYear() {
 		System.out.println("Enter the Year To Check whether it is Leap Or Not: ");
-		subChoice = sc.nextInt();
+		int year  = sc.nextInt();
+		if(year % 4 == 0) {
+			if(year % 100 == 0) {
+				if(year % 400 == 0) {
+					System.out.println("The Given year is leap year");
+				} else {
+					System.out.println("The Given Year is Not a Leap Year");
+				}
+			}else {
+				System.out.println("The Given year is leap year");
+			}
+		}else {
+		System.out.println("The Given Year is Not a Leap Year");
+		
+		}
+		subMenu();
 	}
 }
