@@ -1,0 +1,25 @@
+package Conditional.decisionmaking;
+
+public class EvenOrOdd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int num = 17;
+		
+		if(num % 2 == 0) {
+			System.out.println("The Given Number is Even");
+		} else {
+			System.out.println("The Given Number is Odd");
+		}
+		System.out.println("");
+		
+		num = 8;
+		if(num % 2 == 0) {
+			System.out.println("The Given Number is Even");
+		} else {
+			System.out.println("The Given Number is Odd");
+		}
+	}
+
+}
