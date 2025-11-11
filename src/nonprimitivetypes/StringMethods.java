@@ -27,9 +27,10 @@ public class StringMethods {
 		String str2 = new String("HELLO JAVA");
 		System.out.println("Using equals method: "+ str1.equals(str2));
 		System.out.println("Using equals method: "+ str1 == str2);
-		str2 =str2.intern();
+		str1.intern();
+		str2.intern();
 		
-		System.out.println("Using intern method : "+ (str1== str2));
+		System.out.println("Using intern() method : "+ str1== str2);
 		
 		//char
 		
@@ -45,23 +46,11 @@ public class StringMethods {
 			
 		}
 		
-		//split()
-		String names = "Hello Java Programming";
-		String[] resStr=  names.split("a");
-		System.out.println("Using Split() method: "+ resStr[0]);
-		System.out.println("Using Split() method: "+ resStr[1]);
-		System.out.println("Using Split() method: "+ resStr[2]);
-		System.out.println("Using Split() method: "+ resStr[3]);
-		String[] resStr1 = names.split("o");
-		System.out.println("Using Split() method: "+ resStr1[2]);
-		System.out.println("Using Split() method: "+ resStr1[0]);
+		//compare
+		System.out.println("Compare method: "+str.compareTo(str2));
+		System.out.println();
 		
 		
-		//substring()
-		System.out.println("Using SUbstring "+names.substring(+0,4));
-		System.out.println("Using SUbstring "+names.substring(6));
-		System.out.println("Using SUbstring "+names.substring(3,6));
-		System.out.println("Using SUbstring "+names.substring(4,9));
 	}
 
 }

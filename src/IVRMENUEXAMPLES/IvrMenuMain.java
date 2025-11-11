@@ -10,6 +10,7 @@ public class IvrMenuMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		while(subChoice != 7) {
+			
 			switch(subChoice) {
 			case 1: {
 				add();
@@ -26,9 +27,13 @@ public class IvrMenuMain {
 				break;
 			}
 			case 4: {
+				primeNumber();
+				break;
 				
 			}
 			case 5: {
+				fibonacii();
+				break;
 				
 			}
 			case 6: {
@@ -52,6 +57,7 @@ public class IvrMenuMain {
 //				mainMenu();
 //			}
 		}
+		System.out.println("Thank You For Using Services");
 	}
 
 	static void mainMenu() {
@@ -112,6 +118,45 @@ public class IvrMenuMain {
 		System.out.println("The Given Year is Not a Leap Year");
 		
 		}
+		System.out.println();
+		subMenu();
+		
+	}
+	static void primeNumber() {
+		System.out.println("ENter the range to print prime numbers in the range: ");
+		int range = sc.nextInt();
+		int count = 0;
+		for(int i=1; i<=range; i++) {
+			count =0;
+			for(int j=1; j<=i; j++) {
+				if(i % j == 0) {
+					count++;
+				}
+			}
+			if(count == 2) {
+				System.out.print(i+" ");
+			}
+		}
+		System.out.println();
+		subMenu();
+		
+		
+		}
+	static void fibonacii() {
+		System.out.println("Enter the range to print fibonacii series");
+		int range = sc.nextInt();
+		int intialValue = 0; 
+		int previousValue =1;
+		int currentValue = 0;
+		System.out.print(intialValue+" "+previousValue+" ");
+		for(int i=1; i<=range; i++) {
+//			currentValue = i;
+			int result = intialValue + previousValue;
+			intialValue = previousValue;
+			previousValue = result;
+			System.out.print(result+" ");
+		}
+		System.out.println();
 		subMenu();
 	}
 }
