@@ -14,6 +14,12 @@ public class AllPrograms {
 			case 1: {
 				reverseInteger();
 			}
+			case 2 : {
+				polindrom();
+			}
+			case 3: {
+				factorial();
+			}
 			case 5: {
 				mainMenu();
 			}
@@ -22,8 +28,8 @@ public class AllPrograms {
 	}
 	static void mainMenu() {
 		System.out.println("1.For Reverse an integer");
-		System.out.println("1.For To Check Polindrome");
-		System.out.println("1.For Reverse an integer");
+		System.out.println("2.For To Check Polindrome");
+		System.out.println("3.For Reverse an integer");
 		System.out.println("1.For Reverse an integer");
 		
 		choice = sc.nextInt();
@@ -47,10 +53,37 @@ public class AllPrograms {
 			value = value / 10;
 		}
 		System.out.println("The Reversed Number is : "+reversed);
-		System.out.println(" ");
+		System.out.println();
 		subMenu();
 	}
 	static void polindrom() {
+		System.out.println("Enter the Integer to Check Polindrome :");
+		int value = sc.nextInt();
+		int originalValue = value;
+		int resultNumber =0;
 		
+		while(value != 0) {
+			int lastDig = value % 10;
+			resultNumber = (resultNumber * 10)+lastDig;
+			value = value /10;
+		}
+		if(resultNumber == originalValue) {
+			System.out.println("The Give Number "+ originalValue + " is Polindrome");
+		} else {
+			System.out.println("Not a Polindrome");
+		}
+		System.out.println();
+		subMenu();
+	}
+	static void factorial() {
+		System.out.println("Enter The Number To Find Factorial:");
+		int number = sc.nextInt();
+		int fact = 1;
+		for(int i=1;i<=number;i++) {
+			fact = fact * i;
+		}
+		System.out.println(fact);
+		System.out.println();
+		subMenu();
 	}
 }
