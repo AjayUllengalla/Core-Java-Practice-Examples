@@ -13,15 +13,22 @@ public class AllPrograms {
 			switch(choice) {
 			case 1: {
 				reverseInteger();
+				break;
 			}
 			case 2 : {
 				polindrom();
+				break;
 			}
 			case 3: {
 				factorial();
+				break;
+			}
+			case 4: {
+				evenOrOdd();
 			}
 			case 5: {
 				mainMenu();
+				break;
 			}
 			}
 		}
@@ -30,7 +37,7 @@ public class AllPrograms {
 		System.out.println("1.For Reverse an integer");
 		System.out.println("2.For To Check Polindrome");
 		System.out.println("3.For Reverse an integer");
-		System.out.println("1.For Reverse an integer");
+		System.out.println("4.For Reverse an integer");
 		
 		choice = sc.nextInt();
 	}
@@ -82,8 +89,39 @@ public class AllPrograms {
 		for(int i=1;i<=number;i++) {
 			fact = fact * i;
 		}
-		System.out.println(fact);
+		System.out.println("The Factorial of Given Number is : "+fact);
 		System.out.println();
 		subMenu();
 	}
+	
+	static void evenOrOdd() {
+		System.out.println("1.For Specific Number ");
+		System.out.println("2.To Print Even Numbers in Range ");
+		int subChoice = sc.nextInt();
+		
+		if(subChoice == 1) { //Used to check to Number
+			System.out.println("Ente The Number To Check Even Or Odd");
+			int num = sc.nextInt();
+			if( num % 2 ==0) {
+				System.out.println("The Given Number is Even NUmber");
+			} else {
+				System.out.println("The Given Number is Odd Number");
+			}
+		} else { // It prints even numbers in range
+			System.out.println("Ente The Number To Check Even Or Odd in range");
+			int num = sc.nextInt();
+			System.out.println("Even Numbers: ");
+			for(int i=1;i<=num;i++) {
+				if(i % 2 == 0) {
+					System.out.println(i);
+				}
+			}
+		}
+		
+		System.out.println();
+		subMenu();
+	}
+	
+	
+	
 }
