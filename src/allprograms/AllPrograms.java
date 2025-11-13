@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class AllPrograms {
 
 	static Scanner sc = new Scanner(System.in);
-	static int choice = 5;
+	static int choice = 7;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		while(choice !=6) {
+		while(choice !=9) {
 			switch(choice) {
 			case 1: {
 				reverseInteger();
@@ -27,6 +27,10 @@ public class AllPrograms {
 				evenOrOdd();
 			}
 			case 5: {
+				fibnacciNumber();
+				break;
+			}
+			case 7: {
 				mainMenu();
 				break;
 			}
@@ -38,14 +42,15 @@ public class AllPrograms {
 		System.out.println("2.For To Check Polindrome");
 		System.out.println("3.For Reverse an integer");
 		System.out.println("4.For Reverse an integer");
+		System.out.println("5.For Reverse an integer");
 		
 		choice = sc.nextInt();
 	}
 	//submenu to call previous method or redirect to menu method
 	static void subMenu() {
 		System.out.println("To Test More Enter the: "+ choice);
-		System.out.println("5.For Main Menu");
-		System.out.println("6.Exit");
+		System.out.println("7.For Main Menu");
+		System.out.println("9.Exit");
 		choice = sc.nextInt();
 	}
 	static void reverseInteger() {
@@ -122,6 +127,28 @@ public class AllPrograms {
 		subMenu();
 	}
 	
+	static void fibnacciNumber() {
+		int initialValue =0;
+		int currentValue =1;
+		
+		System.out.println("Enter the range to print fibonacci series");
+		int range = sc.nextInt();
+		
+		System.out.print(initialValue+","+currentValue+", ");
+		int result = 0;
+		for(int i=1;i<=range;i++) {
+			result = initialValue + currentValue;
+			initialValue = currentValue;
+			currentValue = result;
+			if(i == range) {
+				System.out.print(result);
+			} else {
+				System.out.print(result+", ");
+			}
+		}
+		System.out.println();
+		subMenu();
+	}
 	
 	
 }
