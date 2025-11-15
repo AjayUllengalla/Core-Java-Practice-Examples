@@ -26,6 +26,7 @@ public class StaticBlock {
 		// TODO Auto-generated method stub
 
 		System.out.println(a);
+		StaticBlock st = new StaticBlock();
 	}
 
 }
