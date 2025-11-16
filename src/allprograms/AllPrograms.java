@@ -10,21 +10,33 @@ public class AllPrograms {
 		// TODO Auto-generated method stub
 
 		
-				reverseInteger();
+//				reverseInteger();
+//				
+//				polindrom();
+//			
+//				factorial();
+//			
+//				evenOrOdd();
+//			
+//				fibnacciNumber();
+//				System.out.println("Enter The Number to check postive or Negative");
+//				int n = sc.nextInt();
+//				System.out.println(checkPostiveOrNegative(n));
+//				int a = sc.nextInt();
+//				int b = sc.nextInt();
+//				swapWithoutTemp( a,b) ;
+		System.out.println("To Check the number is Strong or Not");
+				int value = sc.nextInt();
 				
-				polindrom();
-			
-				factorial();
-			
-				evenOrOdd();
-			
-				fibnacciNumber();
-				System.out.println("Enter The Number to check postive or Negative");
-				int n = sc.nextInt();
-				System.out.println(checkPostiveOrNegative(n));
+				System.out.println(strongNumber(value));
+				System.out.println("Enter The Number to get factorial");
+				int fact = sc.nextInt();
+				System.out.println(factorial(fact));
+//				factorial(value);
 //				mainMenu();
 			
 	}
+	
 //	static void mainMenu() {
 //		System.out.println("1.For Reverse an integer");
 //		System.out.println("2.For To Check Polindrome");
@@ -150,5 +162,39 @@ public class AllPrograms {
 		return result;
 	}
 	
+	static void swapWithoutTemp(int a,int b) {
+		System.out.println("The Value Of a  before Swap :"+ a);
+		System.out.println("The Value Of b before Swap: "+ b);
+		a = a+b;
+		b = a-b;
+		a = a-b;
+		System.out.println("The Value Of a  after Swap :"+ a);
+		System.out.println("The Value Of b after Swap: "+ b);
+		
+	}
+	static boolean strongNumber(int value) {
+		int temp = value;
+		int fact =0;
+		int res =0;
+		boolean flag = false;
+		while(temp !=0) {
+			fact = temp % 10;
+			res = res + (int)factorial(fact);
+			temp = temp /10;
+		}
+		if(res == value) {
+			flag = true;
+		} else {
+			flag=false;
+		}
+		return flag;
+	}
 	
+	static int factorial(int n) {
+		
+		if(n == 1)
+			return 1;
+		
+		return n*factorial(n-1);
+	}
 }
