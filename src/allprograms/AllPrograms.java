@@ -9,50 +9,39 @@ public class AllPrograms {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		while(choice !=9) {
-			switch(choice) {
-			case 1: {
-				reverseInteger();
-				break;
-			}
-			case 2 : {
-				polindrom();
-				break;
-			}
-			case 3: {
-				factorial();
-				break;
-			}
-			case 4: {
-				evenOrOdd();
-			}
-			case 5: {
-				fibnacciNumber();
-				break;
-			}
-			case 7: {
-				mainMenu();
-				break;
-			}
-			}
-		}
-	}
-	static void mainMenu() {
-		System.out.println("1.For Reverse an integer");
-		System.out.println("2.For To Check Polindrome");
-		System.out.println("3.For Reverse an integer");
-		System.out.println("4.For Reverse an integer");
-		System.out.println("5.For Reverse an integer");
 		
-		choice = sc.nextInt();
+				reverseInteger();
+				
+				polindrom();
+			
+				factorial();
+			
+				evenOrOdd();
+			
+				fibnacciNumber();
+				System.out.println("Enter The Number to check postive or Negative");
+				int n = sc.nextInt();
+				System.out.println(checkPostiveOrNegative(n));
+//				mainMenu();
+			
 	}
+//	static void mainMenu() {
+//		System.out.println("1.For Reverse an integer");
+//		System.out.println("2.For To Check Polindrome");
+//		System.out.println("3.For Reverse an integer");
+//		System.out.println("4.For Reverse an integer");
+//		System.out.println("5.For Reverse an integer");
+//		
+//		choice = sc.nextInt();
+//	}
+	
 	//submenu to call previous method or redirect to menu method
-	static void subMenu() {
-		System.out.println("To Test More Enter the: "+ choice);
-		System.out.println("7.For Main Menu");
-		System.out.println("9.Exit");
-		choice = sc.nextInt();
-	}
+//	static void subMenu() {
+//		System.out.println("To Test More Enter the: "+ choice);
+//		System.out.println("7.For Main Menu");
+//		System.out.println("9.Exit");
+//		choice = sc.nextInt();
+//	}
 	static void reverseInteger() {
 		
 		System.out.println("Enter the Integer to Reverse");
@@ -66,7 +55,7 @@ public class AllPrograms {
 		}
 		System.out.println("The Reversed Number is : "+reversed);
 		System.out.println();
-		subMenu();
+//		subMenu();
 	}
 	static void polindrom() {
 		System.out.println("Enter the Integer to Check Polindrome :");
@@ -85,7 +74,7 @@ public class AllPrograms {
 			System.out.println("Not a Polindrome");
 		}
 		System.out.println();
-		subMenu();
+//		subMenu();
 	}
 	static void factorial() {
 		System.out.println("Enter The Number To Find Factorial:");
@@ -96,11 +85,11 @@ public class AllPrograms {
 		}
 		System.out.println("The Factorial of Given Number is : "+fact);
 		System.out.println();
-		subMenu();
+//		subMenu();
 	}
 	
 	static void evenOrOdd() {
-		System.out.println("1.For Specific Number ");
+		System.out.println("1.For Specific Number for Even Or Odd ");
 		System.out.println("2.To Print Even Numbers in Range ");
 		int subChoice = sc.nextInt();
 		
@@ -124,7 +113,7 @@ public class AllPrograms {
 		}
 		
 		System.out.println();
-		subMenu();
+//		subMenu();
 	}
 	
 	static void fibnacciNumber() {
@@ -147,7 +136,18 @@ public class AllPrograms {
 			}
 		}
 		System.out.println();
-		subMenu();
+//		subMenu();
+	}
+	
+	static String checkPostiveOrNegative(int n) {
+		String result =" ";
+		
+		if(n >0) {
+			result ="Postive";
+		} else {
+			result = "Negative";
+		}
+		return result;
 	}
 	
 	
