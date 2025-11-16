@@ -25,16 +25,18 @@ public class AllPrograms {
 //				int a = sc.nextInt();
 //				int b = sc.nextInt();
 //				swapWithoutTemp( a,b) ;
-		System.out.println("To Check the number is Strong or Not");
-				int value = sc.nextInt();
-				
-				System.out.println(strongNumber(value));
-				System.out.println("Enter The Number to get factorial");
-				int fact = sc.nextInt();
-				System.out.println(factorial(fact));
+//		System.out.println("To Check the number is Strong or Not");
+//				int value = sc.nextInt();
+//				
+//				System.out.println(strongNumber(value));
+//				System.out.println("Enter The Number to get factorial");
+//				int fact = sc.nextInt();
+//				System.out.println(factorial(fact));
 //				factorial(value);
 //				mainMenu();
-			
+				System.out.println("Enter 3 Digit number for check ArmStrong or not");
+				int armStrong = sc.nextInt();
+				armstrong(armStrong);
 	}
 	
 //	static void mainMenu() {
@@ -196,5 +198,19 @@ public class AllPrograms {
 			return 1;
 		
 		return n*factorial(n-1);
+	}
+	static void armstrong(int value) {
+		int temp= value;
+		int resValue=0;
+		while(temp !=0) {
+			int digit = temp %10;
+			resValue = resValue + (digit * digit *digit);
+			temp = temp /10;
+		}
+		if(resValue == value) {
+			System.out.println("ArmStrong Number");
+		} else {
+			System.out.println("Not a ArmStrong Number");
+		}
 	}
 }
