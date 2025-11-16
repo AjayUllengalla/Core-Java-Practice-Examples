@@ -10,33 +10,35 @@ public class AllPrograms {
 		// TODO Auto-generated method stub
 
 		
-//				reverseInteger();
-//				
-//				polindrom();
-//			
-//				factorial();
-//			
-//				evenOrOdd();
-//			
-//				fibnacciNumber();
-//				System.out.println("Enter The Number to check postive or Negative");
-//				int n = sc.nextInt();
-//				System.out.println(checkPostiveOrNegative(n));
-//				int a = sc.nextInt();
-//				int b = sc.nextInt();
-//				swapWithoutTemp( a,b) ;
-//		System.out.println("To Check the number is Strong or Not");
-//				int value = sc.nextInt();
-//				
-//				System.out.println(strongNumber(value));
-//				System.out.println("Enter The Number to get factorial");
-//				int fact = sc.nextInt();
-//				System.out.println(factorial(fact));
-//				factorial(value);
-//				mainMenu();
-				System.out.println("Enter 3 Digit number for check ArmStrong or not");
+				reverseInteger();
+				
+				polindrom();
+			
+				factorial();
+			
+				evenOrOdd();
+			
+				fibnacciNumber();
+				System.out.println("Enter The Number to check postive or Negative");
+				int n = sc.nextInt();
+				System.out.println(checkPostiveOrNegative(n));
+				int a = sc.nextInt();
+				int b = sc.nextInt();
+				swapWithoutTemp( a,b) ;
+		System.out.println("To Check the number is Strong or Not");
+				int value = sc.nextInt();
+				
+				System.out.println(strongNumber(value));
+				System.out.println("Enter The Number to get factorial");
+				int fact = sc.nextInt();
+				System.out.println(factorial(fact));
+				factorial(value);
+				mainMenu();
+				System.out.println("Enter The 3 digit number to checkk armstrong or not");
 				int armStrong = sc.nextInt();
 				armstrong(armStrong);
+				int armStrongvalue = sc.nextInt();
+				armstrongNumber(armStrongvalue);
 	}
 	
 //	static void mainMenu() {
@@ -208,6 +210,22 @@ public class AllPrograms {
 			temp = temp /10;
 		}
 		if(resValue == value) {
+			System.out.println("ArmStrong Number");
+		} else {
+			System.out.println("Not a ArmStrong Number");
+		}
+	}
+	
+	static void armstrongNumber(int value) {
+		int temp = value;
+		int sum = 0;
+		int power = String.valueOf(value).length();
+		while(temp > 0) {
+			int digit = temp % 10;
+			sum = sum +(int)Math.pow(digit, power);
+			temp= temp /10;
+		}
+		if(sum == value) {
 			System.out.println("ArmStrong Number");
 		} else {
 			System.out.println("Not a ArmStrong Number");
