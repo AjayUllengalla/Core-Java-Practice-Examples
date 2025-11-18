@@ -15,43 +15,53 @@ public class BankAccount {
 		
 	}
 	static void withdraw(Bank bank) {
-		double withdrawBalance =  bank.getWidthdrawMoney();
-		double currentBalance = bank.getCurrentBalance();
-		withdrawBalance = currentBalance - withdrawBalance;
-		bank.setCurrentBalance(withdrawBalance);
+		System.out.print("Enter Amount: ");
+		double withdrawBalance = sc.nextDouble();
+		if(withdrawBalance <= bank.getCurrentBalance()) {
+		bank.setCurrentBalance(bank.getCurrentBalance() - withdrawBalance);
+		System.out.println("Withdraw Successful");
+		} else {
+			System.out.println("Insufficient Balance");
+		}
+		System.out.println();
 	}
 	static void checkBalance(Bank bank) {
 		System.out.println("Available Balance:"+bank.getCurrentBalance());
 	}
 	static void deposit(Bank bank) {
-		double currentBalance = bank.getDepositMoney();
-		currentBalance = currentBalance + bank.getCurrentBalance();
-		bank.setCurrentBalance(currentBalance);
+		System.out.print("Enter Amount: ");
+		double depositBalance = sc.nextDouble();
+		bank.setCurrentBalance(bank.getCurrentBalance() + depositBalance);
+		System.out.println("deposit Succesfull");
+		System.out.println();
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		Bank bk = new Bank();
-		
-		while(choice !=4) {
-			switch(choice){
-			case 1 : {
-				checkBalance(bk);
-			}
-			case 2: {
-				bk.setDepositMoney(1000);
-				deposit(bk);
-			}
-			case 3: {
-				bk.setWidthdrawMoney(200);
-				withdraw(bk);
-			}
-			case 5: {
-				mainMenu();
-			}
-			}
-		}
+		 bk.setCurrentBalance(0);
+		 
+		 do {
+			 mainMenu();
+			 switch(choice) {
+			 case 1: {
+				 checkBalance(bk);
+				 break;
+			 } 
+			 case 2: {
+				 deposit(bk);
+				 break;
+			 }
+			 case 3: {
+				 withdraw(bk);
+				 break;
+			 }
+			 case 4 : {
+				 System.out.println("Successful");
+			 }
+			 }
+		 } while(choice !=4);
 	}
 
 }
