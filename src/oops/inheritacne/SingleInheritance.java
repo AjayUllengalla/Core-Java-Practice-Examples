@@ -1,4 +1,4 @@
-package oops.inehritance;
+package oops.inheritacne;
 
 
 class Ball {
