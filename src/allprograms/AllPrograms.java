@@ -25,7 +25,7 @@ public class AllPrograms {
 				int a = sc.nextInt();
 				int b = sc.nextInt();
 				swapWithoutTemp( a,b) ;
-		System.out.println("To Check the number is Strong or Not");
+	      	System.out.println("To Check the number is Strong or Not");
 				int value = sc.nextInt();
 				
 				System.out.println(strongNumber(value));
@@ -33,12 +33,16 @@ public class AllPrograms {
 				int fact = sc.nextInt();
 				System.out.println(factorial(fact));
 				factorial(value);
-				mainMenu();
+//				mainMenu();
 				System.out.println("Enter The 3 digit number to checkk armstrong or not");
 				int armStrong = sc.nextInt();
 				armstrong(armStrong);
 				int armStrongvalue = sc.nextInt();
 				armstrongNumber(armStrongvalue);
+				
+				System.out.println("Enter the Number to check Perfect Number or Not");
+				int perfectNumber = sc.nextInt();
+				System.out.println("The Number is "+perfectNumber + isPerfect(perfectNumber));
 	}
 	
 //	static void mainMenu() {
@@ -230,5 +234,28 @@ public class AllPrograms {
 		} else {
 			System.out.println("Not a ArmStrong Number");
 		}
+	}
+	static boolean isPerfect(int num) {
+		
+		boolean flag = false;
+		int sum =0;
+		if(num > 0) {
+			
+			for(int i=1;i<=num/2;i++) {
+				if(num % i== 0) {
+					sum +=i;
+				}
+			}
+			
+			if(sum == num) {
+				flag = true;
+			} else {
+				flag = false;
+			}
+			
+		} else {
+			flag = false;
+		}
+		return flag;
 	}
 }
