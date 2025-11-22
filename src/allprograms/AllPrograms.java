@@ -22,9 +22,11 @@ public class AllPrograms {
 				System.out.println("Enter The Number to check postive or Negative");
 				int n = sc.nextInt();
 				System.out.println(checkPostiveOrNegative(n));
+				System.out.println("Enter values to to swap: ");
 				int a = sc.nextInt();
 				int b = sc.nextInt();
 				swapWithoutTemp( a,b) ;
+				
 	      	System.out.println("To Check the number is Strong or Not");
 				int value = sc.nextInt();
 				
@@ -62,6 +64,8 @@ public class AllPrograms {
 //		System.out.println("9.Exit");
 //		choice = sc.nextInt();
 //	}
+	
+	//reverse Integer
 	static void reverseInteger() {
 		
 		System.out.println("Enter the Integer to Reverse");
@@ -77,6 +81,8 @@ public class AllPrograms {
 		System.out.println();
 //		subMenu();
 	}
+	
+	//polindrome
 	static void polindrom() {
 		System.out.println("Enter the Integer to Check Polindrome :");
 		int value = sc.nextInt();
@@ -95,7 +101,9 @@ public class AllPrograms {
 		}
 		System.out.println();
 //		subMenu();
-	}
+	} 
+	
+	//factorial
 	static void factorial() {
 		System.out.println("Enter The Number To Find Factorial:");
 		int number = sc.nextInt();
@@ -258,4 +266,6 @@ public class AllPrograms {
 		}
 		return flag;
 	}
+	
+	
 }
