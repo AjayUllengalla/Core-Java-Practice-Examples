@@ -7,4 +7,6 @@ public interface InterfaceDemo {
 	void display2();
 	void test();
 	void work();
+	
+	
 }

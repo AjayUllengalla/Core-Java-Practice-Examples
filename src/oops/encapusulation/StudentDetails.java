@@ -1,4 +1,4 @@
-package oops;
+package oops.encapusulation;
 
 public class StudentDetails {
 
