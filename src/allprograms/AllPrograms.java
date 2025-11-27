@@ -46,8 +46,9 @@ public class AllPrograms {
 				int perfectNumber = sc.nextInt();
 				System.out.println("The Number is "+perfectNumber + isPerfect(perfectNumber));
 				
-				int[] arrEle = {12,5,4,6,8,7};
+				int[] arrEle = {12,5,4,6,8,7,1,2};
 				System.out.println("The Sum of Array Elements: "+ sumOfElements(arrEle));
+				arrayElements(arrEle); 
 	}
 	
 //	static void mainMenu() {
@@ -283,4 +284,29 @@ public class AllPrograms {
 		return sum;
 	}
 	
+	static void arrayElements(int[] arr) {
+		
+		int n = arr.length;
+		int sumOfEven=0;
+		int sumOfOdd=0;
+		int sumOfPrime=0;
+		for(int i=0;i<n;i++) {
+			if(arr[i] % 2==0) {
+				sumOfOdd += arr[i]; 
+			}if(arr[i] % 2 !=0) {
+				sumOfEven += arr[i];
+			}
+		}
+		System.out.println("The Sum of Even Elements: "+ sumOfEven);
+		System.out.println("The Sum of Odd Elements: "+ sumOfOdd);
+		
+		for(int i=0;i<n;i++) {
+			for(int j=1;j<=arr[i];i++) {
+				if(arr[i] % j==0) {
+					sumOfPrime += arr[i];
+				}
+			}
+		}
+		System.out.println("The Sum of Prime Elements: "+ sumOfPrime);
+	}
 }
