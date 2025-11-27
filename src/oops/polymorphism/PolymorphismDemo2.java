@@ -2,6 +2,8 @@ package oops.polymorphism;
 
 public class PolymorphismDemo2 extends  PolymorphismDemo {
 	
+	
+	//method overriding --> Same method name with same parameters wit different Behavoiur
 	void display() {
 		System.out.println();
 	}
