@@ -45,6 +45,9 @@ public class AllPrograms {
 				System.out.println("Enter the Number to check Perfect Number or Not");
 				int perfectNumber = sc.nextInt();
 				System.out.println("The Number is "+perfectNumber + isPerfect(perfectNumber));
+				
+				int[] arrEle = {12,5,4,6,8,7};
+				System.out.println("The Sum of Array Elements: "+ sumOfElements(arrEle));
 	}
 	
 //	static void mainMenu() {
@@ -243,6 +246,8 @@ public class AllPrograms {
 			System.out.println("Not a ArmStrong Number");
 		}
 	}
+	
+	//perfect number check
 	static boolean isPerfect(int num) {
 		
 		boolean flag = false;
@@ -267,5 +272,15 @@ public class AllPrograms {
 		return flag;
 	}
 	
+	static int sumOfElements(int[] arr) {
+		
+		int n =arr.length;
+		int sum =0;
+		
+		for(int i=0;i<n;i++) {
+			sum += arr[i];
+		}
+		return sum;
+	}
 	
 }
