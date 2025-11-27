@@ -9,5 +9,6 @@ public interface AbstractionDemo {
 	
 	void test(int a,int c);
 	void display(String str);
+	void display(int[] arr);
 	
 }

@@ -11,6 +11,9 @@ public class AbstarctionMain {
 		ab.display(156);
 		ab.display("Ajay");
 		ab.test(15,65);
+		
+		int [] arr = {2,4,5,6,7};
+		ab.display(arr);
 	}
 
 }
