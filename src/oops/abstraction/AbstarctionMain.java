@@ -8,6 +8,9 @@ public class AbstarctionMain {
 		AbstractionDemo ab = new AbstractionImple();
 		ab.test();
 		ab.work();
+		ab.display(156);
+		ab.display("Ajay");
+		ab.test(15,65);
 	}
 
 }
