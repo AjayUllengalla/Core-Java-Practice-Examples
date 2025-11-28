@@ -4,7 +4,7 @@ public class ConstructorDemo {
 
 	int c =100;
 	 int h =100;
-	int g = 50;
+	 int g = 50;
 	ConstructorDemo(){
 		System.out.println("hello From Constructor");
 		System.out.println();

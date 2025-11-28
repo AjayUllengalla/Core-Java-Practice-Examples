@@ -11,7 +11,7 @@ public class StudentDetails {
 		System.out.println(emp.getEmpName());
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 		Student st = new Student();
 		st.setStudentId(1);

@@ -5,9 +5,11 @@ package tasksprograms;
 
 public class StaticBlock {
 	static int a;
+	
 	static {
 		 a =50;
-		System.out.println("Hello Static Block Executed");
+	System.out.println("Hello Static Block Executed");
+	System.out.println(a);
 		
 	}
 	
@@ -22,11 +24,14 @@ public class StaticBlock {
 		System.out.println("Static Block 3 Executed ");
 	}
 
+
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		System.out.println(a);
 		StaticBlock st = new StaticBlock();
+//		System.out.println(st.b);
 	}
 
 }
