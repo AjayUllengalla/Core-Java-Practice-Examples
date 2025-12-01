@@ -64,11 +64,27 @@ public class TryCatchMain {
 			}
 		}
 	}
+	static void arrayIndex() {
+		int arr[] = {12,6,3,4,8};
+		
+		while(true) {
+			try {
+				System.out.println("Enter the index number");
+				int index = sc.nextInt();
+				System.out.println(arr[index]);
+				break;
+			} catch(ArrayIndexOutOfBoundsException arrayIndexOutOfBound) {
+				System.out.println("Array index not found and give low number");
+				sc.nextLine();
+			}
+		}
+	}
 	public static void main(String[] args) {
 		
 			division();
 			add();
 			polindrome();
+			arrayIndex();
 			
 	}
 
