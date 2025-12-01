@@ -1,4 +1,4 @@
-package exception.trycatch;
+package exceptions.trycatch;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
