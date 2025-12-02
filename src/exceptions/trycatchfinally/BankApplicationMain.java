@@ -26,7 +26,7 @@ public class BankApplicationMain {
 	  System.out.println("Deposit Successful");
 	  break;
 	  }catch(InputMismatchException inputMismatch) {
-		  System.out.println("Enter the Numbers Only-- Please Provide");
+		  System.out.println("Enter the Amount in Numbers Only-- Please Provide");
 		  sc.nextLine();
 	  }
 	  }

@@ -27,14 +27,16 @@ public class TryCatchMain {
 		
 		while(true) {
 			try {
-				System.out.println("Enter The Values");
+				System.out.println("Enter The Values for division");
 				int a = sc.nextInt();
 				int b=sc.nextInt();
 				System.out.println(a/b);
 				break;
-			}catch(Exception e) {
-				System.out.println("Divisible by Zero not possible");
+			}catch(InputMismatchException inputMismatch) {
+				System.out.println("InputMismatchException --Please enter the Number values");
 				sc.nextLine();
+			}catch(ArithmeticException arthimeticException) {
+				arthimeticException.printStackTrace();
 			}
 		}
 	}
@@ -76,6 +78,8 @@ public class TryCatchMain {
 			} catch(ArrayIndexOutOfBoundsException arrayIndexOutOfBound) {
 				System.out.println("Array index not found and give low number");
 				sc.nextLine();
+			}catch(InputMismatchException inputMismatch) {
+				inputMismatch.printStackTrace();
 			}
 		}
 	}
@@ -101,29 +105,34 @@ public class TryCatchMain {
 	
 	static void stringItem() {
 		System.out.println("Enter The String");
-		String str = sc.nextLine();
-		
 		while(true) {
 			try {
+				String str = sc.nextLine();
 				System.out.println("Enter The Index number");
 				int index = sc.nextInt();
 				System.out.println(str.charAt(index));
 				break;
-			} catch(Exception e) {
+			} catch(InputMismatchException e) {
 				e.printStackTrace();
 				sc.nextLine();
+			}catch(StringIndexOutOfBoundsException stringIndexBound) {
+				System.out.println("StingIndexBoundsException");
+				sc.nextLine();
 			}
+			
 		}
 	}
 	public static void main(String[] args) {
-		
+		try {
 			stringItem();
 			division();
 			add();
 			polindrome();
 			arrayIndex();
 			evenOrOdd();
-			
+		}finally {
+			sc.close();
+		}
 	}
 
 }
