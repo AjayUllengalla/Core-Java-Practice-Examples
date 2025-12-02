@@ -79,12 +79,50 @@ public class TryCatchMain {
 			}
 		}
 	}
+	
+	static void evenOrOdd() {
+		
+		while(true) {
+			try {
+				System.out.println("Enter The Number to check Even Or Odd");
+				int n =sc.nextInt();
+				if(n % 2 ==0) {
+					System.out.println("Even Number");
+				} else {
+					System.out.println("Not a Even Number");
+				}
+				break;
+			} catch(Exception e) {
+				System.out.println("InputMisMatchException occured Please Enter a Number");
+				sc.nextLine();
+			}
+		}
+	}
+	
+	static void stringItem() {
+		System.out.println("Enter The String");
+		String str = sc.nextLine();
+		
+		while(true) {
+			try {
+				System.out.println("Enter The Index number");
+				int index = sc.nextInt();
+				System.out.println(str.charAt(index));
+				break;
+			} catch(Exception e) {
+				e.printStackTrace();
+				sc.nextLine();
+			}
+		}
+	}
 	public static void main(String[] args) {
 		
+			stringItem();
 			division();
 			add();
 			polindrome();
 			arrayIndex();
+			evenOrOdd();
 			
 	}
 
