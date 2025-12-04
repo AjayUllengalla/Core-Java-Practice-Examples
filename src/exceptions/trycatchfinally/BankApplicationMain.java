@@ -3,12 +3,12 @@ package exceptions.trycatchfinally;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class BankApplicationMain {
+public class BankApplicationMain implements BankApplicationServices {
 
 	  static Scanner sc = new Scanner(System.in);
 	  static int userChoice =0;
 	  
-	static void mainMenu() {
+	public void mainMenu() {
 		System.out.println("1.Check Balance");
 		System.out.println("2.Deposit");
 		System.out.println("3.Withdrawal");
@@ -17,7 +17,7 @@ public class BankApplicationMain {
 		userChoice =sc.nextInt();
 	}
 	//deposit Method
-  static void deposit( BankApplicationSetUp bank) {
+  public void deposit( BankApplicationSetUp bank) {
 	  while(true) {
 	  try {
 		  System.out.println("Enter The Amout :");
@@ -31,7 +31,7 @@ public class BankApplicationMain {
 	  }
 	  }
   }
-  static void withdrawal(BankApplicationSetUp bank) {
+  public void withdrawal(BankApplicationSetUp bank) {
 	  while(true) {
 	  try {
 		 System.out.println("Enter The Amount To Withdrawal");
@@ -50,7 +50,7 @@ public class BankApplicationMain {
 	  }
 	  }
   }
-  static void checkBalance(BankApplicationSetUp bank) {
+  public void checkBalance(BankApplicationSetUp bank) {
 	  System.out.println("The Balance:"+bank.getCurrentBalance());
 	  
   }
@@ -58,21 +58,22 @@ public class BankApplicationMain {
 	public static void main(String[] args) {
 		
 		BankApplicationSetUp bankRun = new BankApplicationSetUp();
+		BankApplicationServices bankServices = new BankApplicationMain();
 		try {
 		do {
-			mainMenu();
+			bankServices.mainMenu();
 			switch(userChoice) {
 			
 			case 1: {
-				checkBalance(bankRun);
+				bankServices.checkBalance(bankRun);
 				break;
 			}
 			case 2 : {
-				deposit(bankRun);
+				bankServices.deposit(bankRun);
 				break;
 			}
 			case 3: {
-				withdrawal(bankRun);
+				bankServices.withdrawal(bankRun);
 				break;
 			}
 			default: System.out.println("Thank You For Using Our Services Vist Again!!");
