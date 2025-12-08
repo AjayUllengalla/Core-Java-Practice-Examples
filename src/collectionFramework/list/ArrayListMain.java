@@ -1,4 +1,4 @@
-package collectionFramwork.list;
+package collectionFramework.list;
 
 import java.util.ArrayList;
 
@@ -78,7 +78,7 @@ public class ArrayListMain {
 		//integer
 		
 		ArrayList<Integer> numbersList = new ArrayList<>();
-		int[] nums = {5, 12, 27, 33, 48, 59, 72, 90};
+		int[] nums = {5, 12, 27, 33, 48, 59, 72, 90, 40, 12, 5, 27};
 
 		numbersList.add(nums[1]);
 		System.out.println(numbersList);
@@ -86,7 +86,11 @@ public class ArrayListMain {
 			numbersList.add(nums[i]);
 		}
 		System.out.println("After Adding"+numbersList);
+		//---------- indexof
+		System.out.println("Last Index of :"+numbersList.lastIndexOf(12));
+		System.out.println("first Index of :"+numbersList.indexOf(27));
 		
+		System.out.println(numbersList.contains(33));
 	}
 
 }
