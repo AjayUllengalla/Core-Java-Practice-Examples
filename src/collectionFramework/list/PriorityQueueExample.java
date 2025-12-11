@@ -34,8 +34,10 @@ public class PriorityQueueExample {
 		System.out.println("Details "+priorityQueue);
 		System.out.println(priorityQueue.contains(12));
 		
-		priorityQueue.poll();
+		
+		priorityQueue.poll(); //last element removes
 		System.out.println("Details "+priorityQueue);
+		
 	}
 
 }
