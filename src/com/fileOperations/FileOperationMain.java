@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.Scanner;
@@ -74,7 +75,15 @@ public class FileOperationMain {
 		
 		
 		fr2.close();
-	
+		
+		FileOutputStream fos = new FileOutputStream(file2);
+		fos.write(45);
+		fos.write(56);
+		
+	fos.close();
+	FileWriter fw = new FileWriter(file2);
+	fw.write("Hello Iam From Leicester UK@#");
+	fw.close();
 	}
 
 }
