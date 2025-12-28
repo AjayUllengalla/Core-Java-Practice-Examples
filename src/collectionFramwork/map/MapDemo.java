@@ -1,6 +1,9 @@
 package collectionFramwork.map;
 
 import java.util.HashMap;
+import java.util.Map;
+
+import collectionFramwork.studentManagement.Student;
 
 public class MapDemo {
 
@@ -22,6 +25,25 @@ public class MapDemo {
 		System.out.println(months.get(1));
 		System.out.println(months.get(8));
 		System.out.println("All Months:"+months);
+		months.put(10, "Ajay");
+		System.out.println("All Months after Updated:"+months);
+		
+		
+		Map<Integer,Student> studentMap = new HashMap<>();
+		Student stud = new Student();
+		stud.setStudentName("Ajay");
+		stud.setStudentId(1);
+		
+//		
+		studentMap.put(stud.getStudentId(),stud);
+		stud.setStudentId(2);
+		System.out.println(studentMap);
+		stud.setStudentName("Anu");
+		studentMap.put(stud.getStudentId(),stud);
+		System.out.println(studentMap);
+		System.out.print(studentMap.get(2));
+		
+		
 
 	}
 
