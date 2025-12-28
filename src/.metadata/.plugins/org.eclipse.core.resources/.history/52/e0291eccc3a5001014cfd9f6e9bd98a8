@@ -1,4 +1,4 @@
-package Variables.staticvariables;
+package com.variables.staticvariables;
 
 public class StaticVariableMain {
 

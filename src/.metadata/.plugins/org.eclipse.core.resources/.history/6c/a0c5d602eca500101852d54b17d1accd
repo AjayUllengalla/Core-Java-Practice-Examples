@@ -1,4 +1,4 @@
-package operators.logicalOperators;
+package com.operators.logicalOperators;
 
 public class LogicalOperatorsMain {
 

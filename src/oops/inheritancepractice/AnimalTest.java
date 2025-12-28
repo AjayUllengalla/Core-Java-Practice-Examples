@@ -27,11 +27,11 @@ public class AnimalTest {
 		dg.bark();
 		
 		Animal an = new Animal();  //tightly Coupling
-		an.eat();  //we can access only parent class methods only
+		an.eat();  //we can access only parent class com.methods only
 		
 
 		Animal ad = new Dog();
-		ad.eat(); // bacause no methods same in Dog class so we can access only Animal class Method
+		ad.eat(); // bacause no com.methods same in Dog class so we can access only Animal class Method
 
 	}
 

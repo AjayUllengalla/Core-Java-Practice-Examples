@@ -1,4 +1,4 @@
-package operators.assignmentOperator;
+package com.operators.assignmentOperator;
 
 public class AssignmentOperatorMain {
 

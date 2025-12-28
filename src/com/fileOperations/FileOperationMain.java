@@ -44,6 +44,7 @@ public class FileOperationMain {
 		
 		FileReader fr = new FileReader(file2);
 		
+		
 		//BufferedReader
 		BufferedReader bfr = new BufferedReader(fr);
 		int Index ;
@@ -59,6 +60,7 @@ public class FileOperationMain {
 		while((str =  bfr2.readLine()) != null) {
 			sent += str+ "\n";
 		}
+		
 		System.out.println("ReadLine "+ sent);
 		fr.close();
 		bfr.close();

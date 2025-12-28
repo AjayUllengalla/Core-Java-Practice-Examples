@@ -1,4 +1,4 @@
-package Variables.localVariables;
+package com.variables.localVariables;
 
 public class LocalVariablesMain {
 

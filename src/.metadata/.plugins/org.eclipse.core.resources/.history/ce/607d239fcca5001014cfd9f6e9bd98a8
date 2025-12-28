@@ -1,4 +1,4 @@
-package operators.arthimeticOperators;
+package com.operators.arthimeticOperators;
 
 public class ArthimeticOperatorMain {
 
