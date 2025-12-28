@@ -84,6 +84,10 @@ public class FileOperationMain {
 	FileWriter fw = new FileWriter(file2);
 	fw.write("Hello Iam From Leicester UK@#");
 	fw.close();
+	
+	Reader r = new FileReader(file2);
+	System.out.println((char)r.read());
+	r.close();
 	}
 
 }
